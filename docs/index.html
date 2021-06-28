@@ -1,0 +1,33 @@
+<html>
+
+<body>
+
+<h1>Greedy Algorithms</h1>
+
+<p>
+
+In the graphs shown, there are 4 different ε-greedy methods (at ε = 0.2, ε = 0.1, ε = 0.01, ε = 0.0) 
+on a 10-armed testbed. There are a total of 10000 steps in the experiment, and the results are averaged over 10 runs. 
+The 10 different reward distributions have a mean of 0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, and 4.5, respectively. 
+
+The total regret is also graphed for the different values of ε. 
+
+</p> 
+
+<p>
+The difference between this and the graph given in the book is that the 10 arms have distributions ranging from [0,5) in increments of 0.5. 
+The book did not specify the exact average rewards for each of the arms, it only mentioned the best possible scenario of 1.55. 
+Also, the book started off with an initial action-value estimate of 0, although it starts at a step of 1.
+ I did not quite understand this since it means you are assuming the reward for the first arm selection would be 0. 
+ For the second graph, I chose to use total regret instead of percent optimal value as an indication for how well the algorithm is performing, rather than the percent optimal action. 
+ In my graph shown, lower epsilon values tended to yield higher total regret so this would indicate a lower percent optimal action, which is reflected in the graph in the book
+ </p>
+
+￼<p>
+￼￼￼
+<img src="GreedyGraph.png" alt="Graph" width="500" height="600">
+
+</p>
+</body>
+
+</html>
