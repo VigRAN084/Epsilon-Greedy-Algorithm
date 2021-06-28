@@ -27,6 +27,35 @@ Also, the book started off with an initial action-value estimate of 0, although 
 ￼￼￼
 <img src="GreedyGraph.png" alt="Graph" width="500" height="600">
 
+
+</p>
+<p>
+
+<svg width="600" height="300">
+  <script type="text/JavaScript">
+    <![CDATA[      
+       function increment(event){
+          /*var width = parseFloat(event.target.getAttributeNS(null,"width"));
+          var height = parseFloat(event.target.getAttributeNS(null,"height"));
+          alert("Area of the rectangle is: " +width +"x"+ height);*/
+
+
+          currReward = document.getElementById('rewardText').textContent;
+          document.getElementById('rewardText').textContent = parseInt(currReward) + 1;
+       }       
+    ]]>
+  </script>
+
+
+
+
+<g transform="translate(150,20)">
+  <rect width="150" height="40" stroke="#aaa" stroke-width="2" fill="#fff" onClick="increment(event)"></rect>
+  <text x="75" y="20" id="rewardText" alignment-baseline="middle" font-size="12" stroke-width="0" stroke="#000"   text-anchor="middle" >1</text>
+</g>
+
+</svg>
+
 </p>
 </body>
 
